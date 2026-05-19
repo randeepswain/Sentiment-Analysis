@@ -1,0 +1,125 @@
+.compare-container {
+    padding: 40px;
+    min-height: 100vh;
+    color: white;
+}
+
+.selection-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.selection-box select {
+    padding: 12px;
+    width: 220px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.selection-box button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.selection-box button:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+.loading-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.comparison-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card h2 {
+    margin-bottom: 20px;
+    color: #60a5fa;
+}
+
+.product-card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.product-card h3 {
+    margin-top: 20px;
+    color: #10b981;
+}
+
+.keywords {
+    margin-top: 20px;
+}
+
+.keywords span {
+    display: inline-block;
+    background: #2563eb;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.recommendation-box {
+    grid-column: span 2;
+    text-align: center;
+    background: linear-gradient(to right, #10b981, #059669);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.recommendation-box h2 {
+    margin-bottom: 15px;
+}
+
+.recommendation-box h1 {
+    font-size: 40px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        font-size: 30px;
+    }
+
+    .selection-box {
+        flex-direction: column;
+    }
+
+    .recommendation-box {
+        grid-column: span 1;
+    }
+}
